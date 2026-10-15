@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Libron';
+    src: url('./fonts/Libron/Libron-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.bannerContainer {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin:  10vh auto;
+}
+
+.bannerContainer img {
+    display: block;
+    width: 60vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.bannerText {
+    font-family: "Iosevka Charon", monospace;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    color: var(--text);
+}
+
+.title {
+    font-family: "Libron", monospace;
+    font-size: 7rem;
+    color: var(--accent-blue);
+}
+
+.subtitle {
+    font-family: "Libron", monospace;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--accent-moon);
+}
