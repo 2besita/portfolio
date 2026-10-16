@@ -19,7 +19,7 @@ function App() {
                         <Vortex text="@ochitsudayo" />
                     </div>
                     <div className="subtitle">
-                        <Vortex text="落ち着 — developer / artist" />
+                        <Vortex text="落ち着 —  developer" />
                     </div>
                 </div>
             </div>
