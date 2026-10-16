@@ -1,47 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:wght@500&display=swap');
-
-@font-face {
-    font-family: 'Libron';
-    src: url('./fonts/Libron/Libron-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-display: swap;
-}
 
 
-.mainContainer {
+.headerContainer {
+    width: 35.6rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .bannerContainer {
-    position: relative;
-    display: block;
-    width: fit-content;
-    margin:  10vh auto 5vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(calc(4.50rem - 0.5px));
 }
 
 .bannerContainer img {
-    display: block;
-    width: 56rem;
-    height: 20vw;
-    object-fit: cover;
-    border-radius: 1rem;
+    width: 15rem;
+    object-fit: contain;
 }
 
 .titleContainer {
     display: flex;
     flex-direction: column;
-    width: 10vw;
+    margin-top: 5rem;
 }
 
 .title {
-    font-family: "Libron", monospace;
-    font-size: 5rem;
-    color: var(--accent-blue);
+    font-family: var(--serif);
+    font-size: 5.6rem;
+    color: var(--accent-magenta);
     margin-bottom: -2rem;
+    align-self: flex-start;
+    /* 0.29em = (bleed + particle / 2) / 200px = (56 + 4 / 2) / 200 */
+    transform: translateX(calc(-0.29em - 0.5px));
 }
 
 .subtitle {
-    font-family: "Libron", monospace;
+    font-family: var(--serif);
     font-size: 2rem;
-    margin: 0.8rem;
-    color: var(--accent-moon);
+    color: var(--accent-hyacinth);
+    align-self: flex-end;
+    transform: translateX(calc(-1.29em - 0.5px));
+    margin-bottom: -1rem;
+}
+
+.kanji {
+    font-family: var(--serif);
+    font-size: 2rem;
+    color: var(--accent-hyacinth);
+    align-self: flex-end;
+    transform: translateX(calc(-1.29em - 0.5px));
+}
+
+.introText {
+    font-family: var(--main);
+    font-size: 1.2rem;
+    width: 45rem;
+    text-wrap: pretty;
+}
+
+.softHighlight {
+    color: var(--accent-magenta);
+    font-weight: bold;
 }
