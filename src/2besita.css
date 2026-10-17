@@ -1,12 +1,10 @@
-
-
 .headerContainer {
     width: 35.6rem;
     display: flex;
     flex-direction: row;
 }
 
-.bannerContainer {
+.headerImage {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -14,9 +12,21 @@
     transform: translateY(calc(4.50rem - 0.5px));
 }
 
-.bannerContainer img {
+.emiria {
     width: 15rem;
     object-fit: contain;
+}
+
+.flagContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.transFlag {
+    width: 2rem;
+    height: auto;
 }
 
 .titleContainer {

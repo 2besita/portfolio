@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Vortex from "./components/vortex/Vortex";
 import Emiria from "./assets/emiria.png";
-
-import './Ochitsudayo.css'
+import Flag from "./assets/transgender.gif";
+import './2besita.css'
 
 function App() {
     return (
@@ -20,15 +20,27 @@ function App() {
                     </div>
                 </div>
 
-                <div className="bannerContainer">
-                    <img src={Emiria} className="Banner"/>
+                <div className="headerImage">
+                    <img src={Emiria} className="emiria"/>
                 </div>
             </div>
+
+            <div className="flagContainer">
+                <img src={Flag} className="transFlag"/>
+            </div>
+
             <div className="introText">
                 <p>
                     Hi, I'm <span className="softHighlight">Ellen</span>, a Brazilian software developer focused on low-level
-                    programming and complex problem-solving. I enjoy reading and writing code in C
-                    and Lua. Outside of programming, I listen to a lot of music and enjoy RPGs.
+                    programming and complex problem-solving. I'm also into both
+                    web design and web development, and have taken courses in
+                    the field of computer design, building a reasonably solid
+                    experience in the aspects surrounding it over the time.
+                    <br/>
+                    <br/>
+
+                    Besides coding, I enjoy reading, listening to music, playing
+                    games and tabletop RPG.
                     <br/>
                     <br/>
 
@@ -40,7 +52,7 @@ function App() {
                     <br/>
 
                     As a self-taught programmer, I value free and open-source learning resources.
-                    Much of what I've learned has been possible thanks to the wealth of
+                    Much of what I've learned has been possible due to the wealth of
                     high-quality educational content freely available online. Thanks, internet...
                 </p>
             </div>

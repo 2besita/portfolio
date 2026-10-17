@@ -130,9 +130,9 @@ export default function Vortex({
         /*
            Pointer  events  cover mouse, pen and touch.
 
-           @TODO  If  the  browser starts to scroll during a touch, the
-           pointer  is  cancelled  and  the  particles go back to their
-           place. (not complete)
+           If  the  browser starts to scroll during a touch, the pointer
+           is  cancelled  and  the  particles go back to their place (see
+           onPointerLeave  and  onScroll  below).
         */
         const onPointer = (e: PointerEvent): void => {
             if (!e.isPrimary) return;
@@ -144,9 +144,24 @@ export default function Vortex({
             if (!e.isPrimary) return;
             pointerX = pointerY = POINTER_AWAY;
         };
+        /*
+           The pointer position is stored relative to the canvas and is
+           only updated by pointer events.  When the page scrolls under
+           a  pointer  that  does  not move (touchpad, wheel, keys), no
+           pointer  event  is  fired,  so  the stored position would be
+           stale  and  the particles would stay pushed until the scroll
+           ends.    A  scroll  therefore  releases  them,  as  a  touch
+           cancelled  by  the  browser  does.   The  next pointer event
+           (browsers  send one after the scroll ends) picks the pointer
+           up again if it is still over the canvas.
+        */
+        const onScroll = (): void => {
+            pointerX = pointerY = POINTER_AWAY;
+        };
         canvas.addEventListener('pointermove', onPointer);
         canvas.addEventListener('pointerdown', onPointer);
         canvas.addEventListener('pointerleave', onPointerLeave);
+        window.addEventListener('scroll', onScroll, { passive: true });
 
         const measure = (font: string, metrics: Metrics): TextBox => {
             scratch.font = font;
@@ -366,6 +381,7 @@ export default function Vortex({
             stopWatchingDpr?.();
             cancelAnimationFrame(raf);
             window.removeEventListener('resize', refit);
+            window.removeEventListener('scroll', onScroll);
             canvas.removeEventListener('pointermove', onPointer);
             canvas.removeEventListener('pointerdown', onPointer);
             canvas.removeEventListener('pointerleave', onPointerLeave);
