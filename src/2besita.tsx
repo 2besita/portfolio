@@ -3,10 +3,22 @@ import Vortex from "./components/vortex/Vortex";
 import Emiria from "./assets/emiria.png";
 import Flag from "./assets/transgender.gif";
 import './2besita.css'
-
-function App() {
+/* teste comentário */
+    function App() {
     return (
         <>
+        <header>
+            <div className="pageHeader">
+                <nav className="navBar">
+                    <ul className="pageList">
+                        <li>Introduction</li>
+                        <li>Projects</li>
+                        <li>About me</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <body>
             <div className="headerContainer">
                 <div className="titleContainer">
                     <div className="title">
@@ -56,6 +68,7 @@ function App() {
                     high-quality educational content freely available online. Thanks, internet...
                 </p>
             </div>
+        </body>
         </>
     )
 }

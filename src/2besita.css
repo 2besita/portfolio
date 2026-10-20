@@ -1,3 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pageHeader {
+    margin-top: 0rem;
+    width: 100%;
+    min-height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    color: var(--accent-dgreen);
+    border-bottom: 1px solid var(--accent-green);
+}
+
+.pageList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    font-family: var(--serif);
+    font-size: 1.2rem;
+}
+
 .headerContainer {
     width: 35.6rem;
     display: flex;
@@ -38,7 +68,7 @@
 .title {
     font-family: var(--serif);
     font-size: 5.6rem;
-    color: var(--accent-magenta);
+    color: var(--accent-green);
     margin-bottom: -2rem;
     align-self: flex-start;
     /* 0.29em = (bleed + particle / 2) / 200px = (56 + 4 / 2) / 200 */
@@ -48,7 +78,7 @@
 .subtitle {
     font-family: var(--serif);
     font-size: 2rem;
-    color: var(--accent-hyacinth);
+    color: var(--accent-dgreen);
     align-self: flex-end;
     transform: translateX(calc(-1.29em - 0.5px));
     margin-bottom: -1rem;
@@ -57,7 +87,7 @@
 .kanji {
     font-family: var(--serif);
     font-size: 2rem;
-    color: var(--accent-hyacinth);
+    color: var(--accent-dgreen);
     align-self: flex-end;
     transform: translateX(calc(-1.29em - 0.5px));
 }
@@ -70,6 +100,6 @@
 }
 
 .softHighlight {
-    color: var(--accent-magenta);
+    color: var(--accent-green);
     font-weight: bold;
 }
