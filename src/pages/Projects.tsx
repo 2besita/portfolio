@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'; // ou a biblioteca que você estiver usando
+import { Link } from 'react-router-dom';
 import Header from "../components/head/Header";
 import Vortex from "../components/vortex/Vortex";
 import './Projects.css'
