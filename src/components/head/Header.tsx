@@ -7,9 +7,9 @@ export default function Header() {
             <div className="pageHeader">
                 <nav className="navBar">
                     <ul className="pageList">
-                        <li><Link to="/Intro">Introduction</Link></li>
-                        <li><Link to="/Projects">Projects</Link></li>
-                        <li><Link to="/About">About</Link></li>
+                        <li><Link to="/">Introduction</Link></li>
+                        <li><Link to="/projects">Projects</Link></li>
+                        <li><Link to="/about">About</Link></li>
                     </ul>
                 </nav>
             </div>

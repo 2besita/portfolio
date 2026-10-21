@@ -13,9 +13,10 @@
     --text-h: #f2f2f2;
     --bg: #212020;
     --border: #171c27;
-    --code-bg: #212020;
-    --accent-green: #c3d9ac;
-    --accent-dgreen: #95a683;
+    --bg-high: #333131;
+    --accent-green: #e6daf2;
+    --accent-dgreen: #a796b3;
+    --accent-purple: #a796b3;
     --accent-bg: #212020;
     --accent-border: #c3d9ac;
     --social-bg: #f2f2f2;
@@ -54,4 +55,50 @@ body {
     justify-content: center;
     align-items:center;
     width: 35.6rem;
+}
+
+
+.pageHeader {
+    background-color: var(--bg-high);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 3rem;
+    display: flex;
+    border-bottom: 1px solid var(--accent-green);
+    z-index: 56;
+}
+
+.navBar {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    color: var(--accent-dgreen);
+}
+
+.pageList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    font-family: var(--main);
+    font-weight: 650;
+    font-size: 1.2rem;
+}
+
+:where(a:any-link) {
+    color: var(--accent-dgreen);
+    text-decoration: none;
+}
+
+:where(a:any-link:hover, a:any-link:focus-visible) {
+    color: var(--accent-green);
+}
+
+:where(a:any-link:active) {
+    color: var(--accent-purple);
 }
