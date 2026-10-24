@@ -7,13 +7,13 @@ import styles from "./projects.module.css";
 export default function projects() {
     return (
         <>
-            <div className="PageContainer">
-                <div className="Projects">
-                    <div className="TitleContainer">
-                        <div className="Title">
+            <div className={styles.PageContainer}>
+                <div className={styles.Projects}>
+                    <div className={styles.TitleContainer}>
+                        <div className={styles.Title}>
                             <Vortex text="Projects" />
                         </div>
-                        <div className="Subtitle">
+                        <div className={styles.Subtitle}>
                             <Vortex text="developer / artist" />
                         </div>
                     </div>
