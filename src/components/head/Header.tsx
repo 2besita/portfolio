@@ -8,7 +8,7 @@ export default function Header() {
                 <ul className={styles.pageList}>
                     <li><Link to="/projects">Projects</Link></li>
                     <li><Link to="/">Introduction</Link></li>
-                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/about">About me</Link></li>
                 </ul>
             </nav>
         </header>

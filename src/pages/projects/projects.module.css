@@ -1,0 +1,53 @@
+.TitleContainer {
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    margin-top: 30%;
+    margin-bottom: 60%;
+}
+
+.Title {
+    font-family: var(--serif);
+    font-size: 5.6rem;
+    color: var(--accent-dlavender);
+}
+
+.Subtitle {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--accent-lavender);
+}
+
+.Separator {
+    margin-top: 2rem;
+    height: 5px; width: 50%;
+    border-bottom: 2px solid var(--accent-lavender);
+}
+
+.ProjectBlock {
+    flex: display; flex-direction: column;
+    margin-top: 3rem; 
+    justify-content: center; align-items: center;
+}
+
+.YumShowcase {
+    flex: display; flex-direction: row;
+}
+
+.YumShowcase img {
+    width: 50rem;
+}
+
+/* globals */
+h1 {
+    font-family: var(--serif);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-lavender);
+}
+
+h4 {
+    font-family: var(--main);
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: var(--accent-lavender);
+}
