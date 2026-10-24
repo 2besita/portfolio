@@ -1,6 +1,6 @@
 import Header from './components/head/Header';
-import Intro from './pages/Intro';
-import Projects from './pages/Projects';
+import Intro from './pages/intro/Intro';
+import Projects from './pages/projects/Projects';
 // import About from './pages/About';
 
 import { Routes, Route } from 'react-router-dom';
