@@ -1,0 +1,155 @@
+.PageContainer {
+    height: auto; width: 100%;
+    margin: auto; display: flex;
+    flex-direction: column;
+    align-items: center; justify-content: center;
+}
+
+.Introduction {
+    display: flex; flex-direction: column;
+    align-items: center; margin: auto;
+}
+
+.HeaderContainer {
+    display: flex; flex-direction: row;
+}
+
+.TitleContainer {
+    display: flex; flex-direction: column;
+}
+
+.Title {
+    font-family: var(--serif);
+    font-size: 6.5rem;
+    color: var(--accent-lavender);
+    transform: translate(
+    calc(0.1em - 3.5px),
+    calc(0.1em - 3.5px)
+    );
+}
+
+.Subtitle {
+    font-family: var(--serif);
+    font-size: 2.5rem;
+    color: var(--accent-dlavender);
+    align-self: flex-end;
+    transform: translate(
+    calc(-3.1em - 3.5px),
+    calc(-0.4em - 3.5px)
+    );
+}
+
+.Emiria {
+    width: 15rem;
+    object-fit: contain;
+}
+
+.FlagContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 1.5rem;
+}
+
+.TransFlag {
+    width: 1.5rem;
+    height: auto;
+}
+
+.IntroductionContent {
+    color: var(--text);
+    font-family: var(--main);
+    font-size: 1.2rem;
+    text-wrap: pretty;
+    width: 42rem;
+}
+
+.SoftHighlight {
+    color: var(--accent-lavender);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .PageContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .Introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        zoom: 0.55; 
+    }
+
+    .HeaderContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .TitleContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .Title {
+        font-family: var(--serif);
+        font-size: 6.5rem;
+        color: var(--accent-lavender);
+        transform: translate(
+        calc(0em - 3.5px),
+        calc(0.1em - 3.5px)
+        );
+    }
+
+    .Subtitle {
+        font-family: var(--serif);
+        font-size: 3rem;
+        color: var(--accent-dlavender);
+        align-self: center;
+        transform: translate(
+        calc(0em - 3.5px),
+        calc(-0.5em - 3.5px)
+        );
+    }
+
+    .HeaderImage {
+        display: flex;
+        align-items: center; justify-content: center;
+    }
+
+    .Emiria {
+        width: 15rem;
+        object-fit: contain;
+    }
+
+    .FlagContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem auto 1.5rem;
+    }
+
+    .TransFlag {
+        width: 1.5rem;
+        height: auto;
+    }
+
+    .IntroductionContent {
+        color: var(--text);
+        font-family: var(--main);
+        font-size: 1.8rem;
+        width: 36rem;
+        text-wrap: pretty;
+    }
+
+    .SoftHighlight {
+        color: var(--accent-lavender);
+        font-weight: 600;
+    }
+}
